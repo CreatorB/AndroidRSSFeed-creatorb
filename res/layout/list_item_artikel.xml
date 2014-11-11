@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="5dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="5dp" 
+    android:background="#00BFFF">
+
+    <ImageView
+        android:id="@+id/postThumb"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginRight="5dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/muslim_logo_creatorb" />
+
+    <TextView
+        android:id="@+id/postTitleLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/postThumb"
+        android:layout_toRightOf="@id/postThumb"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="Post Box"
+        android:textIsSelectable="false"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/postDateLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/postThumb"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/postThumb"
+        android:maxLines="1"
+        android:text="Nov 10, 2014"
+        android:textSize="12sp" />
+
+</RelativeLayout>
